@@ -30,18 +30,17 @@ jobs:
         with:
           node-version: "20"
           cache: 'npm'
-          cache-dependency-path: web-app/package-lock.json
 
       - name: Install dependencies
-        run: cd web-app && npm ci
+        run: npm ci
 
       - name: Build
-        run: cd web-app && npm run build
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./web-app/dist
+          path: ./dist
 
   deploy:
     environment:
