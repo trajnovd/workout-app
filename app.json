@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "WorkoutApp",
-    "slug": "WorkoutApp",
+    "name": "Mom's Workout",
+    "slug": "moms-workout",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -9,7 +9,8 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.user.moms.workout"
     },
     "android": {
       "adaptiveIcon": {
