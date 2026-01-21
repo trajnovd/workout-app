@@ -1,6 +1,6 @@
 import { clsx } from 'clsx';
 import { CheckCircle, ChevronDown, ChevronUp, RotateCcw } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import VideoPlayer from '../components/VideoPlayer';
 import { exercises } from '../data/exercises';
