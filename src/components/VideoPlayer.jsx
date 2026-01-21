@@ -13,7 +13,7 @@ export default function VideoPlayer({ src, poster }) {
     <div className="flex justify-center bg-black/20 rounded-xl overflow-hidden backdrop-blur-sm">
       <video
         ref={videoRef}
-        src={src}
+        src={src.startsWith('http') ? src : `${import.meta.env.BASE_URL}${src.startsWith('/') ? src.slice(1) : src}`}
         controls
         playsInline
         loop
